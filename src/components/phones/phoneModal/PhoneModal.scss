@@ -1,0 +1,37 @@
+.PhoneModal {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    right: 30%;
+    bottom: 15%;
+    background-color: rgb(255, 255, 255);
+    border: 1px blue solid;
+    padding: 20px;
+    input{
+      margin-left: 10px;
+    }
+    .inputRow{
+      margin-bottom: 10px;
+      vertical-align: top;
+    }
+    textarea{
+      width: 300px;
+      height: 100px;
+      margin-left: 10px;
+    }
+  }
+  
+  .PhoneOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 999;
+  }
+  
+  .validationError{
+    color: red;
+    font-size: 10px;
+  }
