@@ -50,7 +50,7 @@ const PhoneTableComponent = ({  fetchMorePhones }: { fetchMorePhones: any}) => {
               <div>Color</div>
               <select
                   value={filterByColor}
-                  onChange={(e) => actionMade('selectColor', e.target.value)}
+                  onChange={(e) => { setFilterByColor(e.target.value); actionMade('selectColor', e.target.value)}}
                 >
                   <option value='Default' disabled >
                     Search by color

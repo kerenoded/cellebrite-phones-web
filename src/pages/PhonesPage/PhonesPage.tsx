@@ -92,7 +92,7 @@ const PhonesPage  = () => {
                 <div className="addPhoneText" onClick={toggleModal}>Add Phone</div>
                 <GrAdd className="actionIcon" onClick={toggleModal}></GrAdd>
                 <div><input className="searchInput" type="text" onChange={(event) => handleSearch(event)} placeholder="Search by type, serial or metaData"/></div>
-                <div className="totalAmount">Total amount of phones for this search: {phoneCollection.total}, showing {phoneCollection.arr.length}</div>
+                <div className="totalAmount">Total amount of phones for this search: {phoneCollection.total.toLocaleString()}, showing {phoneCollection.arr.length.toLocaleString()}</div>
                 { colors.length > 0 ? <PhoneTableComponent fetchMorePhones={fetchMorePhones} /> : null }
             </PhonesContext.Provider>
         </Fragment>

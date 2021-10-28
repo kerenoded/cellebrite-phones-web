@@ -16,11 +16,6 @@ table {
       &.selected {
         background-color: lightblue;
       }
-      :last-child {
-        td {
-          //border-bottom: 0;
-        }
-      }
     }
   
     th,
